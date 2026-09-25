@@ -1,0 +1,17 @@
+{
+  "model": "models/fruit-6class_openvino_model",
+  "device": "intel:npu",
+  "host_cpu": "Intel(R) Core(TM) Ultra 5 226V",
+  "device_name": "Intel(R) AI Boost",
+  "execution_devices": [
+    "NPU"
+  ],
+  "runs": 300,
+  "mean_ms": {
+    "preprocess": 2.41,
+    "inference": 6.35,
+    "postprocess": 0.51
+  },
+  "inference_fps": 157.5,
+  "pipeline_fps": 105.7
+}

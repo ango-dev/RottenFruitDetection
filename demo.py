@@ -40,7 +40,10 @@ def check_device(device):
 
 def execution_devices(model):
     compiled = getattr(model.predictor.model, "ov_compiled_model", None)
-    return list(compiled.get_property("EXECUTION_DEVICES")) if compiled else None
+    if not compiled:
+        return None
+    devices = compiled.get_property("EXECUTION_DEVICES")  # a list on CPU/GPU, a plain string on the NPU
+    return [devices] if isinstance(devices, str) else list(devices)
 
 
 def run(model, args):

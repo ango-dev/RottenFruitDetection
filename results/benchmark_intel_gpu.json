@@ -1,0 +1,17 @@
+{
+  "model": "models/fruit-6class_openvino_model",
+  "device": "intel:gpu",
+  "host_cpu": "Intel(R) Core(TM) Ultra 5 226V",
+  "device_name": "Intel(R) Arc(TM) 130V GPU (8GB) (iGPU)",
+  "execution_devices": [
+    "GPU.0"
+  ],
+  "runs": 300,
+  "mean_ms": {
+    "preprocess": 3.28,
+    "inference": 5.98,
+    "postprocess": 0.81
+  },
+  "inference_fps": 167.2,
+  "pipeline_fps": 96.5
+}

@@ -15,13 +15,15 @@ Test split: 593 photos with 870 fruit (170 of the photos have no fruit), used ne
 
 Of the 870 test fruit, the 6-class model finds 846 with the right class, gives 10 the wrong class and misses 14. It puts 5 boxes on the 170 photos without fruit. The weakest class is rotten banana (0.775 mAP@50-95), mostly tight bunches where the boxes overlap.
 
-Speed of the 6-class model on an Intel Core Ultra 5 226V (OpenVINO, 640x640, batch 1):
+Speed of the 6-class model on an Intel Core Ultra 5 226V laptop (OpenVINO, 640x640, batch 1, average of 300 runs):
 
-| Device | Inference | FPS |
-|---|---|---|
-| NPU | TBD | TBD |
-| iGPU | TBD | TBD |
-| CPU | TBD | TBD |
+| Device | Inference | Inference FPS | FPS with pre- and post-processing |
+|---|---|---|---|
+| NPU (Intel AI Boost) | 6.35 ms | 157.5 | 105.7 |
+| iGPU (Arc 130V) | 5.98 ms | 167.2 | 96.5 |
+| CPU | 77.2 ms | 13.0 | 12.4 |
+
+The NPU and the integrated GPU are about equally fast, and both are 12 to 13 times faster than the CPU. The webcam demo runs on the NPU. Measured with `python demo.py --benchmark 300` on a still frame, so camera capture and display aren't included.
 
 Per-class scores, confusion matrix, sample predictions and an error breakdown are in [notebooks/03_evaluation.ipynb](notebooks/03_evaluation.ipynb).
 
