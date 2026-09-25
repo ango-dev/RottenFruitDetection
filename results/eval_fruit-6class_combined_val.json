@@ -1,0 +1,80 @@
+{
+  "model": "models/fruit-6class.pt",
+  "data": "datasets/combined/data.yaml",
+  "split": "val",
+  "device": "0",
+  "images": 991,
+  "instances": 1758,
+  "precision": 0.973,
+  "recall": 0.971,
+  "mAP50": 0.9905,
+  "mAP50-95": 0.889,
+  "per_class": [
+    {
+      "Class": "rotten_apple",
+      "Images": 164,
+      "Instances": 208,
+      "Box-P": 0.9689,
+      "Box-R": 1.0,
+      "Box-F1": 0.9842,
+      "mAP50": 0.9949,
+      "mAP50-95": 0.9374
+    },
+    {
+      "Class": "rotten_banana",
+      "Images": 161,
+      "Instances": 264,
+      "Box-P": 0.969,
+      "Box-R": 0.9473,
+      "Box-F1": 0.958,
+      "mAP50": 0.9781,
+      "mAP50-95": 0.8147
+    },
+    {
+      "Class": "rotten_orange",
+      "Images": 152,
+      "Instances": 332,
+      "Box-P": 0.962,
+      "Box-R": 0.994,
+      "Box-F1": 0.9777,
+      "mAP50": 0.9938,
+      "mAP50-95": 0.9119
+    },
+    {
+      "Class": "fresh_apple",
+      "Images": 144,
+      "Instances": 183,
+      "Box-P": 0.9778,
+      "Box-R": 0.9626,
+      "Box-F1": 0.9701,
+      "mAP50": 0.9938,
+      "mAP50-95": 0.9257
+    },
+    {
+      "Class": "fresh_banana",
+      "Images": 152,
+      "Instances": 387,
+      "Box-P": 0.9665,
+      "Box-R": 0.9692,
+      "Box-F1": 0.9678,
+      "mAP50": 0.9891,
+      "mAP50-95": 0.8639
+    },
+    {
+      "Class": "fresh_orange",
+      "Images": 140,
+      "Instances": 384,
+      "Box-P": 0.9935,
+      "Box-R": 0.9531,
+      "Box-F1": 0.9729,
+      "mAP50": 0.9933,
+      "mAP50-95": 0.8802
+    }
+  ],
+  "ms_per_image": {
+    "preprocess": 0.85,
+    "inference": 1.89,
+    "loss": 0.0,
+    "postprocess": 0.76
+  }
+}

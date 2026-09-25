@@ -1,0 +1,61 @@
+{
+  "train": {
+    "images": 40928,
+    "instances": 40928,
+    "backgrounds": 0,
+    "invalid_boxes": 12339,
+    "per_class": {
+      "fresh_apple": 4931,
+      "rotten_apple": 304,
+      "fresh_banana": 4793,
+      "rotten_banana": 4051,
+      "fresh_grape": 4889,
+      "rotten_grape": 4027,
+      "fresh_mango": 4885,
+      "rotten_mango": 4049,
+      "fresh_orange": 4793,
+      "rotten_orange": 4206
+    }
+  },
+  "val": {
+    "images": 5116,
+    "instances": 5116,
+    "backgrounds": 0,
+    "invalid_boxes": 1536,
+    "per_class": {
+      "fresh_apple": 583,
+      "rotten_apple": 38,
+      "fresh_banana": 614,
+      "rotten_banana": 505,
+      "fresh_grape": 612,
+      "rotten_grape": 515,
+      "fresh_mango": 604,
+      "rotten_mango": 506,
+      "fresh_orange": 621,
+      "rotten_orange": 518
+    }
+  },
+  "test": {
+    "images": 5117,
+    "instances": 5117,
+    "backgrounds": 0,
+    "invalid_boxes": 1568,
+    "per_class": {
+      "fresh_apple": 606,
+      "rotten_apple": 35,
+      "fresh_banana": 585,
+      "rotten_banana": 500,
+      "fresh_grape": 659,
+      "rotten_grape": 498,
+      "fresh_mango": 615,
+      "rotten_mango": 485,
+      "fresh_orange": 610,
+      "rotten_orange": 524
+    }
+  },
+  "total_images": 51161,
+  "copies_of_train_images": {
+    "val": 1055,
+    "test": 970
+  }
+}

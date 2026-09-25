@@ -1,0 +1,37 @@
+{
+  "RottenFruitDataset3": {
+    "role": "fruit",
+    "train": 2316,
+    "valid": 658,
+    "test": 330
+  },
+  "RottenFruitDataset4": {
+    "role": "fruit",
+    "train": 1986,
+    "valid": 190,
+    "test": 96
+  },
+  "FaceDataset1": {
+    "role": "negative",
+    "train": 104,
+    "valid": 38
+  },
+  "FaceDataset2": {
+    "role": "negative",
+    "train": 771,
+    "valid": 19,
+    "test": 108
+  },
+  "BackgroundDataset1": {
+    "role": "negative",
+    "train": 105,
+    "valid": 10,
+    "test": 5
+  },
+  "BackgroundDataset2": {
+    "role": "negative",
+    "train": 1296,
+    "valid": 76,
+    "test": 54
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "train": {
+    "images": 6578,
+    "instances": 8545,
+    "backgrounds": 2291,
+    "invalid_boxes": 0,
+    "per_class": {
+      "rotten_apple": 1139,
+      "rotten_banana": 1805,
+      "rotten_orange": 1408,
+      "fresh_apple": 1032,
+      "fresh_banana": 1647,
+      "fresh_orange": 1514
+    }
+  },
+  "val": {
+    "images": 991,
+    "instances": 1758,
+    "backgrounds": 144,
+    "invalid_boxes": 0,
+    "per_class": {
+      "rotten_apple": 208,
+      "rotten_banana": 264,
+      "rotten_orange": 332,
+      "fresh_apple": 183,
+      "fresh_banana": 387,
+      "fresh_orange": 384
+    }
+  },
+  "test": {
+    "images": 593,
+    "instances": 870,
+    "backgrounds": 170,
+    "invalid_boxes": 0,
+    "per_class": {
+      "rotten_apple": 112,
+      "rotten_banana": 167,
+      "rotten_orange": 142,
+      "fresh_apple": 89,
+      "fresh_banana": 201,
+      "fresh_orange": 159
+    }
+  },
+  "total_images": 8162,
+  "copies_of_train_images": {
+    "val": 0,
+    "test": 1
+  }
+}

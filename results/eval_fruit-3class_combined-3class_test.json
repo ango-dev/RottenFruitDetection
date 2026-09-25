@@ -1,0 +1,50 @@
+{
+  "model": "models/fruit-3class.pt",
+  "data": "datasets/combined-3class/data.yaml",
+  "split": "test",
+  "device": "0",
+  "images": 593,
+  "instances": 870,
+  "precision": 0.9747,
+  "recall": 0.9777,
+  "mAP50": 0.989,
+  "mAP50-95": 0.8798,
+  "per_class": [
+    {
+      "Class": "apple",
+      "Images": 144,
+      "Instances": 201,
+      "Box-P": 0.9803,
+      "Box-R": 0.9878,
+      "Box-F1": 0.984,
+      "mAP50": 0.9922,
+      "mAP50-95": 0.9123
+    },
+    {
+      "Class": "banana",
+      "Images": 149,
+      "Instances": 368,
+      "Box-P": 0.9487,
+      "Box-R": 0.9552,
+      "Box-F1": 0.952,
+      "mAP50": 0.98,
+      "mAP50-95": 0.8216
+    },
+    {
+      "Class": "orange",
+      "Images": 135,
+      "Instances": 301,
+      "Box-P": 0.995,
+      "Box-R": 0.99,
+      "Box-F1": 0.9925,
+      "mAP50": 0.9949,
+      "mAP50-95": 0.9055
+    }
+  ],
+  "ms_per_image": {
+    "preprocess": 0.92,
+    "inference": 2.06,
+    "loss": 0.0,
+    "postprocess": 0.69
+  }
+}

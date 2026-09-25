@@ -1,1 +1,9 @@
 .venv/
+__pycache__/
+datasets/
+runs/
+detections/
+frame_images/
+
+# local experiment checkpoints and downloaded base weights (released models are in models/)
+/*.pt
